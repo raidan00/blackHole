@@ -98,7 +98,7 @@ gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
 gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
 gl.uniform1i(u_Sampler, 0);
 var video = document.getElementsByTagName("video")[0];
-video.onloadeddata = updateEffect;
+video.oncanplay = updateEffect;
 function updateEffect(){
   	canvas.width = video.clientWidth;
   	canvas.height = video.clientHeight;
